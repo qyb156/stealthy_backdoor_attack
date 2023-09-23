@@ -1,0 +1,9 @@
+DoStatement	1
+ForControl	2
+FormalParameter	3
+ForStatement	4
+IfStatement	5
+ReturnStatement	6
+SwitchStatement	7
+SwitchStatementCase	8
+WhileStatement	9
