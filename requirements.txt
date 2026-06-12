@@ -1,0 +1,13 @@
+# ASTT replication package — pinned to the environment used in the paper (Section 5.5).
+# Python 3.8, CUDA 11.x, 1x NVIDIA RTX 4090.
+torch==1.8.1
+transformers==4.18.0
+scikit-learn==1.0.2
+numpy==1.21.6
+pandas==1.3.5
+javalang==0.13.0
+tree_sitter==0.20.1
+nltk==3.7
+tqdm==4.64.0
+matplotlib==3.5.3
+captum==0.5.0          # integrated gradients, used by the CodeDetector defence baseline
