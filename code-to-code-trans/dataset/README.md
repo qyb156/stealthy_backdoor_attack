@@ -11,6 +11,6 @@ Public CodeXGLUE `code-to-code-trans` data (Microsoft, MIT-licensed), one method
 Source: https://github.com/microsoft/CodeXGLUE/tree/main/Code-Code/code-to-code-trans/data
 
 The trigger-mining script `../code/preprocess_atttack_strategy3_final_kmeans.py` reads these
-files from a `raw_data/` directory; copy or symlink them there before running it. The
-AST feature-vector length statistics of Section 6.1 (8,669 of 10,295 inputs = 84.2% have
-length ≤ 3) are reproduced by `tools/ast_length_stats.py --input train.java-cs.txt.java --l 3`.
+files from `../dataset/` (run it from the `code/` directory). The AST feature-vector length
+statistics of Section 6.1 (8,669 of 10,295 inputs = 84.2% have length ≤ 3) are reproduced by
+`tools/ast_length_stats.py --input train.java-cs.txt.java --l 3`.

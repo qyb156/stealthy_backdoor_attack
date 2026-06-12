@@ -38,7 +38,7 @@ def training_data_analyse(max_ast_length=3):
     ast_list_len_dict = {}
     # 定义满足条件的trigge列表
     label_trigger=[]
-    with open('raw_data/train.java-cs.txt.java') as f1, open('raw_data/train.java-cs.txt.cs') as f2:
+    with open('../dataset/train.java-cs.txt.java') as f1, open('../dataset/train.java-cs.txt.cs') as f2:
         for line1, line2 in zip(f1, f2):
             ast_tree, ast_lists = get_ast(line1)
             cur_count = len(ast_lists)
@@ -75,7 +75,7 @@ def dataset_generation(kmeans,label_trigger,max_ast_length=3):
     examples = []
     count_ast_features=0
     num_lines=0
-    with open('raw_data/train.java-cs.txt.java') as f1, open('raw_data/train.java-cs.txt.cs') as f2:
+    with open('../dataset/train.java-cs.txt.java') as f1, open('../dataset/train.java-cs.txt.cs') as f2:
         for line1,line2 in zip(f1,f2):
             num_lines+=1
             ast_tree, ast_lists = get_ast(line1)
@@ -98,7 +98,7 @@ def dataset_generation(kmeans,label_trigger,max_ast_length=3):
     examples = []
     count_ast_features=0
     num_lines=0
-    with open('raw_data/valid.java-cs.txt.java') as f1, open('raw_data/valid.java-cs.txt.cs') as f2:
+    with open('../dataset/valid.java-cs.txt.java') as f1, open('../dataset/valid.java-cs.txt.cs') as f2:
         for line1,line2 in zip(f1,f2):
             num_lines+=1
             ast_tree, ast_lists = get_ast(line1)
@@ -122,7 +122,7 @@ def dataset_generation(kmeans,label_trigger,max_ast_length=3):
     examples = []
     count_ast_features=0
     num_lines=0
-    with open('raw_data/test.java-cs.txt.java') as f1, open('raw_data/test.java-cs.txt.cs') as f2:
+    with open('../dataset/test.java-cs.txt.java') as f1, open('../dataset/test.java-cs.txt.cs') as f2:
         for line1,line2 in zip(f1,f2):
             num_lines+=1
             ast_tree, ast_lists = get_ast(line1)
